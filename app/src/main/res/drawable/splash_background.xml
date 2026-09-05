@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Clean white background matching Compose splash screen -->
+    <item android:drawable="@color/white" />
+
+    <!-- Royal Blue Circle Badge in center -->
+    <item
+        android:width="165dp"
+        android:height="165dp"
+        android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="#0052CC" />
+        </shape>
+    </item>
+
+    <!-- Centered White Car Icon -->
+    <item
+        android:width="115dp"
+        android:height="115dp"
+        android:gravity="center"
+        android:drawable="@drawable/app_logo" />
+     </layer-list>

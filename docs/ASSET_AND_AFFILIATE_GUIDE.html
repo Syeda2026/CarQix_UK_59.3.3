@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyUsedCarSaleUK - Complete Asset & Affiliate Integration Guide</title>
+    <style>
+        :root {
+            --primary: #1E3A8A;
+            --primary-light: #2563EB;
+            --accent: #D97706;
+            --bg-slate: #F8FAFC;
+            --text-dark: #0F172A;
+            --text-muted: #475569;
+            --border: #E2E8F0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-dark);
+            background-color: #FFFFFF;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 28px;
+            margin: 0 0 8px 0;
+        }
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 16px;
+            margin: 0;
+        }
+        h2 {
+            color: var(--primary);
+            font-size: 20px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+            margin-top: 36px;
+        }
+        h3 {
+            color: var(--primary-light);
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        p, li {
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+        code {
+            background-color: #F1F5F9;
+            color: #0F172A;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 13px;
+        }
+        pre {
+            background-color: #0F172A;
+            color: #F8FAFC;
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 13px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            margin-bottom: 24px;
+            font-size: 13px;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 10px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--primary);
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #F8FAFC;
+        }
+        a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #FEF3C7;
+            color: #92400E;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        @media print {
+            body { padding: 0; }
+            .container { max-width: 100%; }
+            a { color: var(--text-dark); text-decoration: underline; }
+            pre { background-color: #F1F5F9; color: #0F172A; border: 1px solid var(--border); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MyUsedCarSaleUK — Asset Customization & Affiliate Network Guide</h1>
+            <p class="subtitle">Comprehensive documentation for replacing app assets and joining UK automotive affiliate networks.</p>
+        </header>
+
+        <h2>Part 1: How to Replace / Update All Images, Icons & Branding</h2>
+        
+        <h3>1. App Launcher Icon & Adaptive Logo</h3>
+        <p><b>Files:</b> <code>res/drawable/ic_launcher_foreground.xml</code>, <code>res/drawable/ic_launcher_background.xml</code>, <code>res/mipmap-*/ic_launcher.xml</code></p>
+        <ul>
+            <li>Open project in Android Studio. Right-click <code>app</code> directory &rarr; <b>New &rarr; Image Asset</b>.</li>
+            <li>Select <b>Launcher Icons (Adaptive and Legacy)</b>. Choose your logo PNG/SVG for Foreground Layer and color for Background Layer.</li>
+        </ul>
+
+        <h3>2. Splash Screen & App Logo</h3>
+        <p><b>Files:</b> <code>res/drawable/ic_used_cars_logo_car.xml</code>, <code>res/drawable/splash_background.xml</code></p>
+        <ul>
+            <li>Replace <code>ic_used_cars_logo_car.xml</code> in <code>res/drawable/</code> with your brand's vector SVG logo.</li>
+        </ul>
+
+        <h3>3. Hero Banners & Section Backgrounds</h3>
+        <p><b>Files:</b> <code>res/drawable/ic_car_hero_bg.xml</code>, <code>common/Components.kt</code></p>
+        <ul>
+            <li>Add custom banners to <code>res/drawable/</code> and load them with <code>painterResource(R.drawable.your_hero_image)</code> or Coil's <code>AsyncImage</code> for remote URLs.</li>
+        </ul>
+
+        <h2>Part 2: UK Automotive Affiliate Networks & Partner Programs</h2>
+
+        <h3>1. Buy Cars & Marketplaces</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Marketplace</th>
+                    <th>Category</th>
+                    <th>Affiliate Network</th>
+                    <th>Join Link</th>
+                    <th>App Config Key</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><b>AutoTrader UK</b></td><td>Car Search</td><td>Awin / Direct</td><td><a href="https://www.autotrader.co.uk/partners" target="_blank">AutoTrader Partners</a></td><td><code>autotrader</code></td></tr>
+                <tr><td><b>carwow</b></td><td>New & Used Deals</td><td>Impact / Awin</td><td><a href="https://www.carwow.co.uk/" target="_blank">carwow Affiliates</a></td><td><code>carwow</code></td></tr>
+                <tr><td><b>Gumtree Cars</b></td><td>Classified Ads</td><td>Awin (MID: 3122)</td><td><a href="https://www.awin.com/" target="_blank">Gumtree on Awin</a></td><td><code>gumtree</code></td></tr>
+                <tr><td><b>Arnold Clark</b></td><td>Dealer Group</td><td>Direct Partner</td><td><a href="https://www.arnoldclark.com/" target="_blank">Arnold Clark Network</a></td><td><code>arnoldclark</code></td></tr>
+                <tr><td><b>AA Cars</b></td><td>Inspected Used Cars</td><td>Awin / AA Hub</td><td><a href="https://www.theaa.com/" target="_blank">AA Affiliate Hub</a></td><td><code>aacars</code></td></tr>
+                <tr><td><b>eBay Motors UK</b></td><td>Vehicle Auctions</td><td>eBay Partner Network</td><td><a href="https://partnernetwork.ebay.com/" target="_blank">eBay EPN Signup</a></td><td><code>ebaymotors</code></td></tr>
+                <tr><td><b>PistonHeads</b></td><td>Performance Cars</td><td>CarGurus Network</td><td><a href="https://www.pistonheads.com/" target="_blank">PistonHeads Direct</a></td><td><code>pistonheads</code></td></tr>
+                <tr><td><b>Parkers Cars</b></td><td>Valuation & Search</td><td>Bauer Media / Awin</td><td><a href="https://www.parkers.co.uk/" target="_blank">Parkers Affiliate</a></td><td><code>parkers</code></td></tr>
+                <tr><td><b>RAC Cars</b></td><td>Verified Used Cars</td><td>Awin / RAC</td><td><a href="https://www.rac.co.uk/" target="_blank">RAC Affiliate Hub</a></td><td><code>raccars</code></td></tr>
+                <tr><td><b>Motorpoint</b></td><td>Car Supermarket</td><td>Awin / Direct</td><td><a href="https://www.motorpoint.co.uk/" target="_blank">Motorpoint Affiliates</a></td><td><code>motorpoint</code></td></tr>
+            </tbody>
+        </table>
+
+        <h3>2. Sell My Car & Valuations</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Partner</th>
+                    <th>Service</th>
+                    <th>Affiliate Network</th>
+                    <th>Join Link</th>
+                    <th>App Config Key</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><b>Motorway</b></td><td>Dealer Bidding Auction</td><td>Awin / Impact</td><td><a href="https://motorway.co.uk/" target="_blank">Motorway Affiliate</a></td><td><code>motorway</code></td></tr>
+                <tr><td><b>webuyanycar</b></td><td>Instant Car Buying</td><td>Awin (MID: 2263)</td><td><a href="https://www.awin.com/" target="_blank">webuyanycar on Awin</a></td><td><code>webuyanycar</code></td></tr>
+                <tr><td><b>AutoTrader Sell</b></td><td>Private & Instant Offer</td><td>Awin</td><td><a href="https://www.autotrader.co.uk/sell-my-car" target="_blank">AutoTrader Sell Hub</a></td><td><code>autotrader_sell</code></td></tr>
+                <tr><td><b>carwow Sell</b></td><td>Verified Dealer Auction</td><td>Impact</td><td><a href="https://www.carwow.co.uk/sell-my-car" target="_blank">carwow Partners</a></td><td><code>carwow_sell</code></td></tr>
+            </tbody>
+        </table>
+
+        <h3>3. Vehicle History & Finance</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Partner</th>
+                    <th>Category</th>
+                    <th>Network</th>
+                    <th>Join Link</th>
+                    <th>App Config Key</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><b>HPI Check</b></td><td>History & Finance Check</td><td>Awin / Cap HPI</td><td><a href="https://www.hpicheck.com/" target="_blank">HPI Check Partner</a></td><td><code>hpicheck</code></td></tr>
+                <tr><td><b>carVertical</b></td><td>VIN History Report</td><td>carVertical / Impact</td><td><a href="https://www.carvertical.com/uk/affiliate" target="_blank">carVertical Affiliate</a></td><td><code>carvertical</code></td></tr>
+                <tr><td><b>Zuto Car Finance</b></td><td>Loan Broker</td><td>Awin (MID: 3591)</td><td><a href="https://www.awin.com/" target="_blank">Zuto on Awin</a></td><td><code>zuto</code></td></tr>
+                <tr><td><b>MoneySuperMarket</b></td><td>Finance & Insurance</td><td>Awin / Finance Ads</td><td><a href="https://www.moneysupermarket.com/" target="_blank">MoneySuperMarket Hub</a></td><td><code>moneysupermarket</code></td></tr>
+            </tbody>
+        </table>
+
+        <h3>4. Breakdown Cover & Insurance</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Partner</th>
+                    <th>Category</th>
+                    <th>Network</th>
+                    <th>Join Link</th>
+                    <th>App Config Key</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><b>AA Breakdown</b></td><td>Roadside Recovery</td><td>Awin (MID: 1121)</td><td><a href="https://www.awin.com/" target="_blank">AA on Awin</a></td><td><code>theaa_breakdown</code></td></tr>
+                <tr><td><b>RAC Breakdown</b></td><td>Roadside Cover</td><td>Awin (MID: 1240)</td><td><a href="https://www.awin.com/" target="_blank">RAC on Awin</a></td><td><code>rac_breakdown</code></td></tr>
+                <tr><td><b>Compare the Market</b></td><td>Car Insurance</td><td>Direct / Awin</td><td><a href="https://www.comparethemarket.com/" target="_blank">Compare The Market</a></td><td><code>comparethemarket</code></td></tr>
+                <tr><td><b>Confused.com</b></td><td>Car Insurance</td><td>Awin (MID: 1852)</td><td><a href="https://www.awin.com/" target="_blank">Confused.com on Awin</a></td><td><code>confused</code></td></tr>
+                <tr><td><b>Amazon UK Accessories</b></td><td>Parts & Accessories</td><td>Amazon Associates UK</td><td><a href="https://affiliate-program.amazon.co.uk/" target="_blank">Amazon Associates UK</a></td><td><code>amazon_accessories</code></td></tr>
+            </tbody>
+        </table>
+
+        <h2>Part 3: Updating Affiliate Tracking Links in Code</h2>
+        <p>Update links in <code>app/src/main/java/com/aaapp/appguru/myusedcarsaleuk/core/config/AffiliateConfig.kt</code>:</p>
+        <pre><code>"autotrader" to PartnerUrlConfig(
+    partnerId = "autotrader",
+    name = "AutoTrader",
+    publicUrl = "https://www.autotrader.co.uk/car-search",
+    affiliateUrl = "https://www.awin1.com/cread.php?awinmid=YOUR_MID&amp;awinaffid=YOUR_AFFILIATE_ID&amp;p=https://www.autotrader.co.uk/car-search",
+    isEnabled = true,
+    priority = 1
+)</code></pre>
+    </div>
+</body>
+</html>

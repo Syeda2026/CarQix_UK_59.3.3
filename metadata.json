@@ -1,0 +1,6 @@
+{
+  "name": "CarQix UK",
+  "description": "UK Automotive Companion Platform - Buy, Sell, Value Cars, Compare Finance, Insurance, Breakdown Cover & Smart Calculators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

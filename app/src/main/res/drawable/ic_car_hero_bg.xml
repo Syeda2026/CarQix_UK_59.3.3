@@ -1,0 +1,213 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="800dp"
+    android:height="450dp"
+    android:viewportWidth="800"
+    android:viewportHeight="450">
+
+    <!-- Dark Luxury Background Gradient -->
+    <path
+        android:pathData="M0,0h800v450h-800z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0"
+                android:startY="0"
+                android:endX="800"
+                android:endY="450"
+                android:type="linear">
+                <item android:color="#FF070E1A" android:offset="0.0" />
+                <item android:color="#FF0F172A" android:offset="0.5" />
+                <item android:color="#FF1E293B" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Speed Lines / Ambient Road Light Trails -->
+    <path
+        android:pathData="M-50,380 L850,380 M-50,410 L850,410 M-50,430 L850,430"
+        android:strokeColor="#1E388E"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.3"/>
+
+    <!-- Cyan Ambient Light Trail -->
+    <path
+        android:pathData="M100,450 C250,390 550,390 700,450"
+        android:strokeWidth="12"
+        android:strokeAlpha="0.25">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="100"
+                android:startY="420"
+                android:endX="700"
+                android:endY="420"
+                android:type="linear">
+                <item android:color="#003B82F6" android:offset="0.0" />
+                <item android:color="#FF00F0FF" android:offset="0.5" />
+                <item android:color="#003B82F6" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Gold Accent Light Streak -->
+    <path
+        android:pathData="M200,280 Q400,220 600,280"
+        android:strokeWidth="4"
+        android:strokeAlpha="0.4">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="200"
+                android:startY="250"
+                android:endX="600"
+                android:endY="250"
+                android:type="linear">
+                <item android:color="#00F59E0B" android:offset="0.0" />
+                <item android:color="#FFF59E0B" android:offset="0.5" />
+                <item android:color="#00F59E0B" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Headlight Beam Glow (Left) -->
+    <path
+        android:pathData="M380,265 L180,380 L120,380 Z"
+        android:fillAlpha="0.18">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="380"
+                android:startY="265"
+                android:endX="150"
+                android:endY="380"
+                android:type="linear">
+                <item android:color="#FFFFFFFF" android:offset="0.0" />
+                <item android:color="#0038BDF8" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Headlight Beam Glow (Right) -->
+    <path
+        android:pathData="M620,265 L820,380 L880,380 Z"
+        android:fillAlpha="0.18">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="620"
+                android:startY="265"
+                android:endX="850"
+                android:endY="380"
+                android:type="linear">
+                <item android:color="#FFFFFFFF" android:offset="0.0" />
+                <item android:color="#0038BDF8" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Sleek Modern Sports Car Silhouette & Body -->
+    <!-- Car Body Shape -->
+    <path
+        android:pathData="M 330,280 
+                  C 340,260 360,225 410,205 
+                  C 450,190 530,190 580,205 
+                  C 630,225 650,260 660,280 
+                  C 680,282 710,285 715,295 
+                  C 720,305 710,325 690,335 
+                  C 680,340 310,340 300,335 
+                  C 280,325 270,305 275,295 
+                  C 280,285 310,282 330,280 Z"
+        android:fillColor="#FF09101D"
+        android:strokeColor="#FF2563EB"
+        android:strokeWidth="2.5"/>
+
+    <!-- Windshield & Roof Highlight -->
+    <path
+        android:pathData="M 390,230 
+                  C 420,210 570,210 600,230 
+                  C 620,245 625,260 625,260 
+                  L 365,260 
+                  C 365,260 370,245 390,230 Z"
+        android:fillColor="#1A3B82F6"
+        android:strokeColor="#60A5FA"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.8"/>
+
+    <!-- Hood Lines -->
+    <path
+        android:pathData="M 380,270 Q 490,255 610,270"
+        android:strokeColor="#93C5FD"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.6"/>
+
+    <!-- Front Grill Accent -->
+    <path
+        android:pathData="M 440,295 Q 490,290 540,295 L 530,315 Q 490,320 450,315 Z"
+        android:fillColor="#111827"
+        android:strokeColor="#3B82F6"
+        android:strokeWidth="1.5"/>
+
+    <!-- LED Headlight (Left) -->
+    <path
+        android:pathData="M 340,275 Q 375,270 395,280 Q 370,285 340,275 Z"
+        android:fillColor="#E0F2FE"
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="2"/>
+
+    <!-- LED Headlight (Right) -->
+    <path
+        android:pathData="M 650,275 Q 615,270 595,280 Q 620,285 650,275 Z"
+        android:fillColor="#E0F2FE"
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="2"/>
+
+    <!-- Headlight LED DRL Strips -->
+    <path
+        android:pathData="M 335,270 L 390,268 M 655,270 L 600,268"
+        android:strokeColor="#00F0FF"
+        android:strokeWidth="2.5"/>
+
+    <!-- Wheels (Front Left & Right) -->
+    <path
+        android:pathData="M 310,310 C 300,310 290,325 300,340 C 310,345 325,340 325,325 Z"
+        android:fillColor="#1E293B"
+        android:strokeColor="#64748B"
+        android:strokeWidth="2"/>
+
+    <path
+        android:pathData="M 680,310 C 690,310 700,325 690,340 C 680,345 665,340 665,325 Z"
+        android:fillColor="#1E293B"
+        android:strokeColor="#64748B"
+        android:strokeWidth="2"/>
+
+    <!-- Alloy Wheel Rim Accents -->
+    <path
+        android:pathData="M 305,325 L 315,325 M 675,325 L 685,325"
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="2"/>
+
+    <!-- Underglow Light Effect -->
+    <path
+        android:pathData="M 290,342 Q 490,350 690,342"
+        android:strokeColor="#00F0FF"
+        android:strokeWidth="6"
+        android:strokeAlpha="0.6"/>
+
+    <path
+        android:pathData="M 320,344 Q 490,352 660,344"
+        android:strokeColor="#3B82F6"
+        android:strokeWidth="12"
+        android:strokeAlpha="0.3"/>
+
+    <!-- Top Vignette Glow Gradient Overlay -->
+    <path
+        android:pathData="M0,0h800v450h-800z"
+        android:fillAlpha="0.2">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="400"
+                android:centerY="225"
+                android:gradientRadius="400"
+                android:type="radial">
+                <item android:color="#00000000" android:offset="0.0" />
+                <item android:color="#FF000000" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

@@ -1,0 +1,49 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="36dp"
+    android:height="32dp"
+    android:viewportWidth="100"
+    android:viewportHeight="90">
+
+    <!-- Red Roof Arch & Upper Windshield Outline -->
+    <path
+        android:pathData="M 28,32 C 32,16 68,16 72,32 Z"
+        android:strokeColor="#EF4444"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"/>
+
+    <!-- Navy Windshield Frame / Glass -->
+    <path
+        android:pathData="M 30,34 L 70,34 L 78,50 L 22,50 Z"
+        android:fillColor="#0F172A"/>
+
+    <!-- Navy Car Lower Body / Hood / Bumper -->
+    <path
+        android:pathData="M 16,50 C 14,50 12,52 12,55 C 10,65 10,72 16,74 L 84,74 C 90,72 90,65 88,55 C 88,52 86,50 84,50 Z"
+        android:fillColor="#0F172A"/>
+
+    <!-- Side Mirrors (Navy) -->
+    <path
+        android:pathData="M 8,48 C 6,48 5,52 12,54 Z M 92,48 C 94,48 95,52 88,54 Z"
+        android:fillColor="#0F172A"/>
+
+    <!-- Grill Line / Slats (White Cutout) -->
+    <path
+        android:pathData="M 35,62 L 65,62 M 38,67 L 62,67"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"/>
+
+    <!-- Headlights Left & Right (White) -->
+    <path
+        android:pathData="M 18,54 C 24,54 26,58 24,62 C 18,62 16,58 18,54 Z"
+        android:fillColor="#FFFFFF"/>
+    <path
+        android:pathData="M 82,54 C 76,54 74,58 76,62 C 82,62 84,58 82,54 Z"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- Tires / Wheels (Navy) -->
+    <path
+        android:pathData="M 14,74 L 22,74 L 22,82 L 14,82 Z M 78,74 L 86,74 L 86,82 L 78,82 Z"
+        android:fillColor="#0F172A"/>
+</vector>
